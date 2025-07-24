@@ -1,0 +1,276 @@
+{
+  "designSystem": {
+    "name": "Developer Portfolio Dark Theme",
+    "version": "1.0.0",
+    "description": "A modern developer portfolio design system with terminal/code editor aesthetics and interactive gaming elements",
+    
+    "colorPalette": {
+      "primary": {
+        "background": {
+          "main": "#0a0e27",
+          "secondary": "#1a1f3a",
+          "gradient": "linear-gradient(135deg, #0a0e27 0%, #1e3a5f 50%, #0a0e27 100%)"
+        },
+        "accent": {
+          "cyan": "#4dd0e1",
+          "teal": "#26a69a",
+          "blue": "#42a5f5"
+        },
+        "text": {
+          "primary": "#ffffff",
+          "secondary": "#b0bec5",
+          "muted": "#607d8b",
+          "code": "#4fc3f7"
+        },
+        "interactive": {
+          "hover": "#263238",
+          "active": "#37474f",
+          "border": "#455a64"
+        }
+      }
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "primary": "system-ui, -apple-system, sans-serif",
+        "code": "'Fira Code', 'Monaco', 'Consolas', monospace"
+      },
+      "scales": {
+        "hero": {
+          "fontSize": "3.5rem",
+          "fontWeight": "700",
+          "lineHeight": "1.1",
+          "letterSpacing": "-0.02em"
+        },
+        "subtitle": {
+          "fontSize": "1.25rem",
+          "fontWeight": "400",
+          "color": "accent.cyan"
+        },
+        "body": {
+          "fontSize": "1rem",
+          "fontWeight": "400",
+          "lineHeight": "1.6"
+        },
+        "code": {
+          "fontSize": "0.875rem",
+          "fontFamily": "code",
+          "color": "text.code"
+        },
+        "navigation": {
+          "fontSize": "0.9rem",
+          "fontWeight": "500"
+        }
+      }
+    },
+
+    "layout": {
+      "structure": {
+        "type": "split-screen",
+        "navigation": "horizontal-tabs",
+        "contentAreas": ["main-content", "interactive-sidebar"]
+      },
+      "spacing": {
+        "containerPadding": "2rem",
+        "sectionGap": "3rem",
+        "elementGap": "1.5rem",
+        "componentPadding": "1rem"
+      },
+      "breakpoints": {
+        "mobile": "768px",
+        "tablet": "1024px",
+        "desktop": "1200px"
+      }
+    },
+
+    "components": {
+      "navigation": {
+        "style": "tab-based",
+        "position": "top-horizontal",
+        "appearance": {
+          "background": "transparent",
+          "borderBottom": "1px solid border",
+          "activeIndicator": "bottom-border",
+          "activeColor": "accent.cyan"
+        },
+        "states": {
+          "default": { "color": "text.secondary" },
+          "hover": { "color": "text.primary" },
+          "active": { 
+            "color": "text.primary",
+            "borderBottom": "2px solid accent.cyan"
+          }
+        }
+      },
+
+      "hero": {
+        "layout": "left-aligned",
+        "elements": ["greeting", "name", "role", "description"],
+        "styling": {
+          "greeting": {
+            "fontSize": "body",
+            "color": "text.secondary",
+            "marginBottom": "0.5rem"
+          },
+          "name": {
+            "fontSize": "hero",
+            "color": "text.primary",
+            "fontWeight": "bold"
+          },
+          "role": {
+            "fontSize": "subtitle",
+            "color": "accent.cyan",
+            "prefix": "> ",
+            "fontFamily": "code"
+          }
+        }
+      },
+
+      "codeBlock": {
+        "appearance": {
+          "fontFamily": "code",
+          "fontSize": "code",
+          "color": "text.code",
+          "background": "transparent"
+        },
+        "syntax": {
+          "comment": "text.muted",
+          "keyword": "accent.cyan",
+          "string": "accent.teal",
+          "variable": "text.primary"
+        }
+      },
+
+      "interactivePanel": {
+        "position": "right-sidebar",
+        "styling": {
+          "background": "background.secondary",
+          "border": "1px solid border",
+          "borderRadius": "8px",
+          "padding": "1.5rem",
+          "boxShadow": "0 4px 20px rgba(0,0,0,0.3)"
+        },
+        "elements": {
+          "display": {
+            "background": "background.main",
+            "border": "2px solid accent.teal",
+            "borderRadius": "4px"
+          },
+          "controls": {
+            "layout": "grid",
+            "gap": "0.5rem"
+          }
+        }
+      },
+
+      "button": {
+        "variants": {
+          "primary": {
+            "background": "accent.cyan",
+            "color": "background.main",
+            "padding": "0.5rem 1rem",
+            "borderRadius": "4px",
+            "fontSize": "0.875rem",
+            "fontWeight": "500"
+          },
+          "secondary": {
+            "background": "transparent",
+            "color": "text.secondary",
+            "border": "1px solid border",
+            "padding": "0.5rem 1rem",
+            "borderRadius": "4px"
+          }
+        },
+        "states": {
+          "hover": {
+            "transform": "translateY(-1px)",
+            "boxShadow": "0 2px 8px rgba(77, 208, 225, 0.3)"
+          }
+        }
+      },
+
+      "socialLinks": {
+        "position": "bottom-left",
+        "layout": "horizontal",
+        "styling": {
+          "color": "text.muted",
+          "fontSize": "1.25rem",
+          "gap": "1rem"
+        },
+        "states": {
+          "hover": {
+            "color": "accent.cyan",
+            "transform": "translateY(-2px)"
+          }
+        }
+      }
+    },
+
+    "patterns": {
+      "terminalAesthetic": {
+        "description": "Code editor/terminal inspired design elements",
+        "characteristics": [
+          "Monospace fonts for code elements",
+          "Syntax highlighting colors",
+          "Dark background with bright accents",
+          "Comment-style annotations",
+          "Command-line style prompts (>)"
+        ]
+      },
+      
+      "interactiveElements": {
+        "description": "Gaming/interactive components integration",
+        "characteristics": [
+          "Contained interactive panels",
+          "Pixel-style or retro gaming aesthetics",
+          "Bright accent colors for interactive elements",
+          "Grid-based control layouts"
+        ]
+      },
+
+      "professionalPortfolio": {
+        "description": "Clean, professional layout with personality",
+        "characteristics": [
+          "Clear information hierarchy",
+          "Generous whitespace usage",
+          "Subtle animations and hover effects",
+          "Split-screen or sidebar layouts",
+          "Tab-based navigation"
+        ]
+      }
+    },
+
+    "animations": {
+      "subtle": {
+        "hover": "transform: translateY(-1px); transition: all 0.2s ease",
+        "focus": "box-shadow: 0 0 0 2px accent.cyan; transition: box-shadow 0.2s ease"
+      },
+      "interactive": {
+        "buttonPress": "transform: scale(0.98); transition: transform 0.1s ease",
+        "linkHover": "color transition with 0.2s ease"
+      }
+    },
+
+    "accessibility": {
+      "contrast": {
+        "textOnBackground": "AAA compliant",
+        "accentColors": "AA compliant minimum"
+      },
+      "focusStates": "Visible focus indicators with accent colors",
+      "semanticStructure": "Proper heading hierarchy and landmark usage"
+    },
+
+    "usage": {
+      "bestFor": [
+        "Developer portfolios",
+        "Tech-focused personal websites",
+        "Creative professional showcases",
+        "Interactive resume sites"
+      ],
+      "adaptations": {
+        "contentTypes": "Easily adaptable for different professional roles by changing accent colors and interactive elements",
+        "branding": "Color palette and interactive elements can be customized while maintaining core structure"
+      }
+    }
+  }
+}
