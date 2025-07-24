@@ -1,0 +1,42 @@
+{
+  "personalInfo": {
+    "name": "Lahcen Ouirghhane",
+    "email": "lahcenwirghhane11@gmail.com",
+    "carrer": "Full Stack Web Developer",
+    "profile": "/src/assets/imgaes/hero.png"
+  },
+  "about": "I am a dedicated Full-stack developer with a passion for crafting robust, scalable, and user-centric web and mobile applications. Proficient in both front-end and back-end technologies, I specialize in creating seamless user experiences and efficient server-side solutions. My drive for innovation and commitment to continuous learning enable me to deliver high-quality projects that meet modern industry standards. I thrive in collaborative environments, bringing creativity and technical expertise to every challenge.",
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "React.js",
+    "React Native",
+    "Expo",
+    "PHP",
+    "Laravel",
+    "MySQL",
+    "PostgreSQL"
+  ],
+  "projects": [
+    {
+      "title": "Netflix - Movie Discovery Web App",
+      "technologies": [
+        "React.js",
+        "Tailwind CSS",
+        "TMDB API",
+        "Context API",
+        "React Router"
+      ],
+      "description": "Developed a responsive web application for movie discovery, integrating the TMDB API for real-time content. Utilized React.js and Tailwind CSS to create an intuitive user interface with efficient state management via Context API."
+    },
+    {
+      "title": "Moove Up - Fitness Tracking Mobile App",
+      "technologies": [
+        "React Native",
+        "Expo"
+      ],
+      "description": "Designed and developed a cross-platform mobile application using React Native and Expo to replace paper-based fitness training logs. Implemented features for real-time workout tracking, progress monitoring, and goal setting, delivering a user-friendly experience for fitness enthusiasts."
+    }
+  ]
+}
